@@ -7,7 +7,7 @@
 	text-decoration: none;
 	outline: none;
 
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Overpass', sans-serif;
     box-sizing: border-box;
 	}
 
@@ -47,7 +47,7 @@ body {
     color: #1a24fb;
     
     font-family: 'Overpass', sans-serif;
-    font-family: 'Montserrat', sans-serif;
+    
 }
 
 nav {
@@ -74,6 +74,104 @@ nav h3{
     position: absolute;
     top: 15px;
     left: 10px;
+
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    font-family:'Overpass', sans-serif;
 }
 
+.container {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
+    max-width: 1280px;
+    gap: 100px 20px;
+
+}
+
+.card{
+    position: relative;
+    padding: 10px;
+
+    width: 400px;
+    margin: 30px;
+    margin-top: 70px;
+
+    border: 0.15em solid #1a24fb;
+
+}
+
+.number {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.textcontainer {
+    margin: 30px;
+
+}
+
+.text{
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.title {
+
+    margin-top: 10px;
+    margin-bottom: 20px;    
+    font-weight: bold;
+}
+
+.sub {
+
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    
+}
+
+.cardButton {
+    width: calc(100% * 18px);
+
+    font-size: 14px;
+}
+
+.buttonDiv{
+    position: absolute;
+
+    width: 100%;
+    bottom: -40px;
+    left: 0;
+}
+
+.cardButton .material-icons{
+    position: absolute;
+    right: 0;
+    font-size: 18px;
+}
+
+.buttonDiv:hover {
+    background-color: #1a24fb;
+    color: #f8f7f3;
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+      transform: scale(0.7);
+    }
+  }
